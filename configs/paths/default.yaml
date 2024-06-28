@@ -1,0 +1,14 @@
+# root directory 
+root_dir: ${oc.env:PROJECT_ROOT} 
+
+# data directory 
+data_dir: ${paths.root_dir}/data/ 
+
+# logging directory 
+log_dir: ${paths.root_dir}/logs/ 
+
+# output directory created by hydra 
+output_dir: ${hydra:runtime.output_dir} 
+
+# working directory 
+work_dir: ${hydra:runtime.cwd}

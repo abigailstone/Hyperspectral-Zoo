@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data & Models
+*.h5
+*.tar
+*.tar.gz
+
+# Local data 
+configs/local/default.yaml
+/data/
+/logs/
+.env
+/notebooks/

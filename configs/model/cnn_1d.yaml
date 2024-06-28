@@ -1,0 +1,21 @@
+_target_: src.models.hyperspectral_classification.HyperspectralLitModule
+
+optimizer:
+  _target_: torch.optim.SGD
+  _partial_: true
+  lr: 0.01
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 10
+
+net:
+  _target_: src.models.components.CNN_1D.CNN1D
+  input_channels: ${data.n_bands}
+  n_classes: ${data.n_classes}
+
+# compile model for faster training with pytorch 2.0
+compile: false

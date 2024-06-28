@@ -1,0 +1,12 @@
+# https://wandb.ai
+
+wandb:
+  _target_: lightning.pytorch.loggers.wandb.WandbLogger
+  # name: "" # name of the run (override wandb default name)
+  save_dir: "${paths.output_dir}"
+  offline: False
+  id: null # to resume experiment
+  project: "hyperspectral"
+  log_model: False # upload lightning ckpts
+  tags: []
+  job_type: ""
