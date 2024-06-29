@@ -24,8 +24,6 @@ Datasets downloaded from [here](https://www.ehu.eus/ccwintco/index.php?title=Hyp
 - [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018
 ## Set-Up
 
-#### Pip
-
 #### Conda
 
 ```bash
@@ -48,7 +46,7 @@ Train model with default configuration
 
 ```bash
 # train on CPU
-python src/train.py trainer=cpu 
+python src/train.py
 
 # train using Salinas data 
 python src/train.py data=salinas
