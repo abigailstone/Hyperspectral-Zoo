@@ -18,6 +18,8 @@ Datasets downloaded from [here](https://www.ehu.eus/ccwintco/index.php?title=Hyp
  | --- | --- | --- | --- | --- | 
  | Indian Pines | 200 | 145 x 145 | 16 | AVIRIS ($0.4 - 2.5 * 10^6$ nm)|  
  | Salinas | 204 | 512 x 217 | 16 | AVIRIS |
+ | Pavia Centre | 102 | 1096 x 1096 | 10 | ROSIS | 
+ | Pavia University | 103 | 610 x 610 | 10 | ROSIS |
 
 ## Models 
 - [1D CNN](https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619) -  Hu et al. "Deep Convolutional Neural Networks for Hyperspectral Image Classification", Journal of Sensors, 2015 

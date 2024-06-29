@@ -1,0 +1,17 @@
+_target_: src.data.hyperspectral_datamodule.HyperspectralDataModule  
+
+dataloader: 
+  _target_ : src.data.components.pavia.PaviaDataset 
+  data_dir: ${paths.data_dir}
+  data_path: "paviaU"
+  labels_path: "paviaU_gt" 
+  patch_size: 1
+
+n_bands: 103
+n_classes: 10
+
+batch_size: 32 
+val_split: 0.2 
+test_split: 0.1 
+num_workers: 8 
+pin_memory: False
