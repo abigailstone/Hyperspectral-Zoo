@@ -8,9 +8,12 @@ __pycache__/
 *.tar
 *.tar.gz
 
-# Local data 
+# Local data
 configs/local/default.yaml
 /data/
 /logs/
 .env
 /notebooks/
+
+# MacOS stuff
+.DS_Store
