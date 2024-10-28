@@ -1,17 +1,17 @@
-_target_: src.data.hyperspectral_datamodule.HyperspectralDataModule  
+_target_: src.data.hyperspectral_datamodule.HyperspectralDataModule
 
-dataloader: 
-  _target_ : src.data.components.indian_pines.IndianPinesDataset 
+dataloader:
+  _target_ : src.data.components.indian_pines.IndianPinesDataset
   data_dir: ${paths.data_dir}
   data_path: "indian_pines_corrected"
-  labels_path: "indian_pines_gt" 
+  labels_path: "indian_pines_gt"
   patch_size: 3
 
 n_bands: 200
 n_classes: 17
 
-batch_size: 32 
-val_split: 0.2 
-test_split: 0.1 
-num_workers: 8 
+batch_size: 32
+val_split: 0.2
+test_split: 0.1
+num_workers: 8
 pin_memory: False
