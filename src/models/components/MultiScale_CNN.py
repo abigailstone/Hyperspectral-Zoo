@@ -43,7 +43,7 @@ class MultiScaleCNN(nn.Module):
         Weight initialization
         """
         if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
-            nn.init.kaiming_uniform(m.weight)
+            nn.init.kaiming_uniform_(m.weight)
             nn.init.zeros_(m.bias)
 
     def _get_flattened_size(self):
