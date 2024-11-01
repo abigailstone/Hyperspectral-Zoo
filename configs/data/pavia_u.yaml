@@ -5,7 +5,7 @@ dataloader:
   data_dir: ${paths.data_dir}
   data_path: "paviaU"
   labels_path: "paviaU_gt"
-  patch_size: 3
+  patch_size: ${model.net.patch_size}
 
 n_bands: 103
 n_classes: 10

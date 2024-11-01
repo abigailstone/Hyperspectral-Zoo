@@ -16,6 +16,7 @@ net:
   _target_: src.models.components.CNN_1D.CNN1D
   input_channels: ${data.n_bands}
   n_classes: ${data.n_classes}
+  patch_size: 1
 
 # compile model for faster training with pytorch 2.0
 compile: false

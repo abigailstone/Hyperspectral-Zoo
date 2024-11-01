@@ -9,7 +9,7 @@ class CNN1D(nn.Module):
     https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619
     """
 
-    def __init__(self, input_channels, n_classes, kernel_size=None, pool_size=None):
+    def __init__(self, input_channels, n_classes, kernel_size=None, pool_size=None, patch_size=1):
 
         super(CNN1D, self).__init__()
 

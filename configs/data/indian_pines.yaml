@@ -5,7 +5,7 @@ dataloader:
   data_dir: ${paths.data_dir}
   data_path: "indian_pines_corrected"
   labels_path: "indian_pines_gt"
-  patch_size: 3
+  patch_size: ${model.net.patch_size}
 
 n_bands: 200
 n_classes: 17
