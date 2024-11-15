@@ -10,6 +10,7 @@ __pycache__/
 
 # Local data
 configs/local/default.yaml
+/bash/
 /data/
 /logs/
 .env
