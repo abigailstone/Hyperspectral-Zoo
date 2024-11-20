@@ -8,22 +8,25 @@
 
 ## Description
 
-This a testing ground for implementing deep learning models for hyperspectral data. 
+This a testing ground for implementing deep learning models for hyperspectral data.
 
-## Datasets  
+## Datasets
 
 Datasets downloaded from [here](https://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes).
- 
- | Dataset | # Bands | Image Size  |# Classes | Sensor (spectral range) | 
- | --- | --- | --- | --- | --- | 
- | Indian Pines | 200 | 145 x 145 | 16 | AVIRIS ($0.4 - 2.5 * 10^6$ nm)|  
- | Salinas | 204 | 512 x 217 | 16 | AVIRIS |
- | Pavia Centre | 102 | 1096 x 1096 | 10 | ROSIS | 
- | Pavia University | 103 | 610 x 610 | 10 | ROSIS |
 
-## Models 
-- [1D CNN](https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619) -  Hu et al. "Deep Convolutional Neural Networks for Hyperspectral Image Classification", Journal of Sensors, 2015 
-- [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018
+ | Dataset | # Bands | Image Size  |# Classes | Sensor (spectral range) |
+ | --- | --- | --- | --- | --- |
+ | Indian Pines | 200 | 145 x 145 | 16 | AVIRIS ($0.4 - 2.5 * 10^6$ nm)|
+ | Salinas | 204 | 512 x 217 | 16 | AVIRIS |
+ | Pavia Centre | 102 | 1096 x 1096 | 10 | ROSIS |
+ | Pavia University | 103 | 610 x 610 | 10 | ROSIS |
+ | Kennedy Space Center | 224 | 512 x 614 | 13 | AVIRIS |
+
+## Models
+- [1D CNN](https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619) -  Hu et al. "Deep Convolutional Neural Networks for Hyperspectral Image Classification", Journal of Sensors, 2015
+- [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018 
+- [Multi-Scale CNN](https://ieeexplore.ieee.org/document/8297014) He et al. "Multi-scale 3D deep convolutional neural network for hyperspectral image classification", IEEE Conference on Image Processing, 2017
+
 ## Set-Up
 
 #### Conda
@@ -38,7 +41,7 @@ conda env create -f environment.yaml -n myenv
 
 # activate conda environment
 conda activate myenv
-``` 
+```
 
 Log in to [Weights & Biases](https://wandb.ai/) from the command line to set up W&B logging.
 
@@ -50,7 +53,7 @@ Train model with default configuration
 # train on CPU
 python src/train.py
 
-# train using Salinas data 
+# train using Salinas data
 python src/train.py data=salinas
 
 ```
@@ -59,6 +62,6 @@ You can override any parameter from command line like this
 
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
-``` 
+```
 
-See [Hydra docs](https://hydra.cc/) for more info.  
+See [Hydra docs](https://hydra.cc/) for more info.

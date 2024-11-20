@@ -26,18 +26,18 @@ class HyperspectralDataModule(LightningDataModule):
         """
         Initialize a HyperspectralDataModule
 
-        :param dataloader: The dataloader specified in the config 
-        :param n_bands: The number of bands in this dataset 
-        :param n_classes: the number of classes in this dataset 
+        :param dataloader: The dataloader specified in the config
+        :param n_bands: The number of bands in this dataset
+        :param n_classes: the number of classes in this dataset
         :param batch_size: The batch size. Defaults to 32.
         :param val_split: validation split ratio (0.1 = 10%)
-        :param test_split: test split ratio 
+        :param test_split: test split ratio
         :param num_workers: The number of workers. Defaults to `0`.
         :param pin_memory: Whether to pin memory. Defaults to `False`.
         """
         super().__init__()
 
-        self.save_hyperparameters(logger=False) 
+        self.save_hyperparameters(logger=False)
 
         self.dataloader = dataloader
 
