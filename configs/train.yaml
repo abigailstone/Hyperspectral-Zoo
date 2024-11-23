@@ -1,8 +1,8 @@
 defaults:
   - _self_
   - data: indian_pines
-  - model: hsi_cnn
-  - callbacks: none
+  - model: multiscale_cnn
+  - callbacks: default
   - logger: wandb
   - trainer: default
   - paths: default

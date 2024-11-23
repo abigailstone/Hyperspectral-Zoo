@@ -1,10 +1,10 @@
 _target_: src.models.hyperspectral_classification.HyperspectralLitModule
 
 optimizer:
-  _target_: torch.optim.SGD
+  _target_: torch.optim.Adagrad
   _partial_: true
-  lr: 0.1
-  weight_decay: 0.09
+  lr: 0.01
+  weight_decay: 0.01
 
 scheduler:
   _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
