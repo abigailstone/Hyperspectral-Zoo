@@ -1,0 +1,17 @@
+_target_: src.data.hyperspectral_datamodule.HyperspectralDataModule
+
+dataloader:
+  _target_ : src.data.components.botswana.BotswanaDataset
+  data_dir: ${paths.data_dir}
+  data_path: "Botswana"
+  labels_path: "Botswana_gt"
+  patch_size: ${model.net.patch_size}
+
+n_bands: 145
+n_classes: 14
+
+batch_size: 32
+val_split: 0.2
+test_split: 0.1
+num_workers: 8
+pin_memory: False

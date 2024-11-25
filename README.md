@@ -16,15 +16,16 @@ Datasets downloaded from [here](https://www.ehu.eus/ccwintco/index.php?title=Hyp
 
  | Dataset | # Bands | Image Size  |# Classes | Sensor (spectral range) |
  | --- | --- | --- | --- | --- |
- | Indian Pines | 200 | 145 x 145 | 16 | AVIRIS ($0.4 - 2.5 * 10^6$ nm)|
+ | Indian Pines | 200 | 145 x 145 | 16 | AVIRIS ($0.4 - 2.5 * 10^{-6}$ m)|
  | Salinas | 204 | 512 x 217 | 16 | AVIRIS |
  | Pavia Centre | 102 | 1096 x 1096 | 10 | ROSIS |
  | Pavia University | 103 | 610 x 610 | 10 | ROSIS |
  | Kennedy Space Center | 224 | 512 x 614 | 13 | AVIRIS |
+ | Botswana | 145 | | 14 | NASA EO-1 ($0.4 - 2.5 * 10^{-6} m$) |
 
 ## Models
 - [1D CNN](https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619) -  Hu et al. "Deep Convolutional Neural Networks for Hyperspectral Image Classification", Journal of Sensors, 2015
-- [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018 
+- [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018
 - [Multi-Scale CNN](https://ieeexplore.ieee.org/document/8297014) He et al. "Multi-scale 3D deep convolutional neural network for hyperspectral image classification", IEEE Conference on Image Processing, 2017
 
 ## Set-Up
