@@ -1,5 +1,6 @@
 defaults:
   - model_checkpoint
+  - early_stopping
 
 model_checkpoint:
   dirpath: ${paths.output_dir}/checkpoints
@@ -8,3 +9,8 @@ model_checkpoint:
   mode: "max"
   save_last: True
   auto_insert_metric_name: False
+
+  early_stopping:
+    monitor: "val/acc"
+    patience: 25
+    mode: "max"
