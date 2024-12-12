@@ -27,6 +27,7 @@ Datasets downloaded from [here](https://www.ehu.eus/ccwintco/index.php?title=Hyp
 - [1D CNN](https://onlinelibrary.wiley.com/doi/pdf/10.1155/2015/258619) -  Hu et al. "Deep Convolutional Neural Networks for Hyperspectral Image Classification", Journal of Sensors, 2015
 - [HSI-CNN](https://arxiv.org/pdf/1802.10478) -  Luo et al. "HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image", ICALIP 2018
 - [Multi-Scale CNN](https://ieeexplore.ieee.org/document/8297014) He et al. "Multi-scale 3D deep convolutional neural network for hyperspectral image classification", IEEE Conference on Image Processing, 2017
+- [Spectral-Spatial CNN](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8344565) - Ben Hamida et al. "3-D Deep Lear Approach for Remote Sensing Image Classification", IEEE TGRS, 2018
 
 ## Set-Up
 

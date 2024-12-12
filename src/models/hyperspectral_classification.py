@@ -37,9 +37,9 @@ class HyperspectralLitModule(LightningModule):
         self.criterion = torch.nn.CrossEntropyLoss()
 
         # metric objects for calculating and averaging accuracy across batches
-        self.train_acc = Accuracy(task="multiclass", num_classes=17)
-        self.val_acc = Accuracy(task="multiclass", num_classes=17)
-        self.test_acc = Accuracy(task="multiclass", num_classes=17)
+        self.train_acc = Accuracy(task="multiclass", num_classes=self.net.n_classes)
+        self.val_acc = Accuracy(task="multiclass", num_classes=self.net.n_classes)
+        self.test_acc = Accuracy(task="multiclass", num_classes=self.net.n_classes)
 
         # for averaging loss across batches
         self.train_loss = MeanMetric()
